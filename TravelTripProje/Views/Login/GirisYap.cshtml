@@ -3,6 +3,11 @@
     Layout = null;
 }
 
+
+@{
+    Layout = null;
+}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,12 +32,14 @@
                             <div class="logo">
                                 <img src="/bootstrap-5-login-page-template/assets/images/user.png">
                             </div>
+                            @using (Html.BeginForm("GirisYap", "Login", FormMethod.Post))
+                            {
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control _ge_de_ol" type="text" placeholder="Kullanıcı Adı" required="" aria-required="true">
+                                <input type="text" name="Kullanici" class="form-control _ge_de_ol" typeof="text" placeholder="Kullanıcı Adı..." required="" aria-required="true">
                             </div>
 
                             <div class="form-group">
-                                <input type="password" name="password" class="form-control _ge_de_ol" type="text" placeholder="Şifre" required="" aria-required="true">
+                                <input type="password" name="Sifre" class="form-control _ge_de_ol" typeof="text" placeholder="Şifre..." required="" aria-required="true">
                             </div>
 
                             <div class="checkbox form-group">
@@ -46,10 +53,9 @@
                             </div>
 
                             <div class="form-group">
-                                <div class="_btn_04">
-                                    <a href="#">Giriş</a>
-                                </div>
+                                <input type="submit" value="Giriş Yap" class="_btn_04" />
                             </div>
+                            }
                             <div class="form-group pt-0">
                                 <div class="_social_04">
                                     <ol>
@@ -69,3 +75,4 @@
     </section>
 </body>
 </html>
+
