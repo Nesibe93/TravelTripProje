@@ -1,0 +1,41 @@
+﻿@model TravelTripProje.Models.Sınıflar.Yorumlar
+@{
+    ViewBag.Title = "YorumGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Yorum Güncelleme Sayfası</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            @using (Html.BeginForm("YorumGüncelle","Admin",FormMethod.Post))
+            {
+                <div class="modal-body">
+                    @Html.LabelFor(x => x.ID)
+                    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+                    <br />
+                    @Html.LabelFor(x => x.KullaniciAdi)
+                    @Html.TextBoxFor(x => x.KullaniciAdi, new { @class = "form-control" })
+                    <br />
+                    @Html.LabelFor(x => x.Mail)
+                    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+                    <br />
+                    @Html.LabelFor(x => x.Yorum)
+                    @Html.TextAreaFor(x => x.Yorum,10,1, new { @class = "form-control" })
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <a href="/Admin/YorumListesi/" class="btn btn-outline-secondary">İptal</a>
+                    <button type="submit" class="btn btn-success" data-target="#myModal">Yorum Güncelle</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

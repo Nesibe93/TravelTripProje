@@ -12,8 +12,7 @@ namespace TravelTripProje.Controllers
         Context context = new Context();
         public ActionResult Index()
         {
-
-            var degerler = context.Blogs.ToList();
+            var degerler = context.Blogs.Take(8).ToList();
             return View(degerler);
         }
         public ActionResult About()
@@ -28,6 +27,22 @@ namespace TravelTripProje.Controllers
         public PartialViewResult Partial2()
         {
             var degerler = context.Blogs.Where(x => x.ID==1).ToList();
+            return PartialView(degerler);
+        }
+        //En popüler 10 Blog
+        public PartialViewResult Partial3()
+        {
+            var degerler = context.Blogs.Take(10).ToList();
+            return PartialView(degerler);
+        }
+        public PartialViewResult Partial4()
+        {
+            var degerler = context.Blogs.Take(3).ToList();
+            return PartialView(degerler);
+        }
+        public PartialViewResult Partial5()
+        {
+            var degerler = context.Blogs.Take(3).OrderByDescending(x=> x.ID).ToList();
             return PartialView(degerler);
         }
     }
