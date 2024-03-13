@@ -37,7 +37,9 @@ Bu proje, Bir tatil&Seyahat sitesi projesidir. Kişisel gezilen görülen yerler
 ### <img width="22" height="22" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-home-resume-flaticons-lineal-color-flat-icons.png" alt="external-home-resume-flaticons-lineal-color-flat-icons"/>Anasayfa
 ![travelana](https://github.com/Nesibe93/TravelTripProje/assets/125722258/d75754ae-bfaf-4905-8a07-e7e64785fb36)
 ![travelana2](https://github.com/Nesibe93/TravelTripProje/assets/125722258/004e1e2b-687d-40fc-910b-141aaeacde0d)
+### <img width="24" height="24" src="https://github.com/Nesibe93/TravelTripProje/assets/125722258/a5b3b46c-aa97-4ec0-ab06-ff13b372e589"/>Blog Sayfası
 ![travelana3](https://github.com/Nesibe93/TravelTripProje/assets/125722258/4674b98b-f8bf-47af-aeab-63aae510f35f)
+
 
 ### <img width="22" height="22" src="https://github.com/Nesibe93/MeyawoPortfolio/assets/125722258/2f304682-903d-46db-9215-03a0f3f9a7d5"/>Database Diagram
 ![travel-db-diag](https://github.com/Nesibe93/TravelTripProje/assets/125722258/4c789ec8-b43f-466f-88a7-f43b8ec5e25a)
