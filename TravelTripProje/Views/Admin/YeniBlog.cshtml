@@ -5,64 +5,64 @@
 }
 
 @*<h2>YeniBlog</h2>
-<br />
-<form class="form-group" method="post">
-    @Html.LabelFor(x => x.Baslik)
-    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
     <br />
-    @Html.LabelFor(x => x.Tarih)
-    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
-    <br />
-    @Html.LabelFor(x => x.BlogImage)
-    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
-    <br />
-    @Html.LabelFor(x => x.Aciklama)
-    @Html.TextAreaFor(x => x.Tarih, new { @class = "form-control" })
-    <br />
-    <button class="btn btn-primary">Blog Ekle</button>
-</form>*@
+    <form class="form-group" method="post">
+        @Html.LabelFor(x => x.Baslik)
+        @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(x => x.Tarih)
+        @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(x => x.BlogImage)
+        @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(x => x.Aciklama)
+        @Html.TextAreaFor(x => x.Tarih, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-primary">Blog Ekle</button>
+    </form>*@
+
 
 
 @*<div class="container">
     <div class="row mt-1">
         <div class="col">*@
-            <div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myModalLabel">Yeni Blog Ekleme</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <form class="form-group" method="post" action="/Admin/YeniBlog/">
-                            <div class="modal-body">
-
-                                @Html.LabelFor(x => x.Baslik)
-                                @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
-                                <br />
-                                @Html.LabelFor(x => x.Tarih)
-                                @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
-                                <br />
-                                @Html.LabelFor(x => x.BlogImage)
-                                @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
-                                <br />
-                                @Html.LabelFor(x => x.Aciklama)
-                                @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control" })
-
-                            </div>
-                            <div class="modal-footer">
-                                <a href="/Admin/Index/" class="btn btn-outline-secondary">İptal</a>
-                                <button type="submit" class="btn btn-primary">Blog Ekle</button>
-                                @*<a href="#" class="btn btn-primary" data-target="#myModal">Blog Ekle</a>*@
-                                @*<button type="submit" class="btn btn-primary" data-dismiss="modal">Onayla</button>*@
-                            </div>
-                        </form>
-                    </div>
-                </div>
+<div class="modal fade" tabindex="-1" id="myModal" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Yeni Blog Ekleme</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-        @*</div>
+            <form class="form-group" method="post" action="/Admin/YeniBlog/">
+                <div class="modal-body">
+
+                    @Html.LabelFor(x => x.Baslik)
+                    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+                    <br />
+                    @Html.LabelFor(x => x.Tarih)
+                    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+                    <br />
+                    @Html.LabelFor(x => x.BlogImage)
+                    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
+                    <br />
+                    @Html.LabelFor(x => x.Aciklama)
+                    @Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control" })
+
+                </div>
+                <div class="modal-footer">
+                    <a href="/Admin/Index/" class="btn btn-outline-secondary">İptal</a>
+                    <button type="submit" class="btn btn-primary" id="btn1">Blog Ekle</button>
+                </div>
+
+            </form>
+        </div>
     </div>
-</div>*@
+</div>
+@*</div>
+        </div>
+    </div>*@
 
 
